@@ -126,6 +126,9 @@ body {
 }
 
 @media (max-width: 480px) {
+  .hero{
+    overflow: hidden;
+  }
 
   .hero-title {
     font-size: 1.55rem;
