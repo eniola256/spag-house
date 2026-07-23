@@ -9,6 +9,8 @@
   background: url('../home-bg.png');
   background-size: cover;
   background-position: center;
+  overflow: hidden;
+  background-repeat: no-repeat;
 }
 
 .hero::before {
@@ -38,11 +40,6 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-.spag-img img{
-
-    width:100rem;
 }
 
 .hero-text {
@@ -98,7 +95,12 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(0,0,0,0.3);
 }
-
+@media (max-width: 1024px){
+.spag-img {
+    width: 80%;
+    height: auto;
+  }
+}
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2.25rem;
@@ -124,6 +126,7 @@ body {
 }
 
 @media (max-width: 480px) {
+
   .hero-title {
     font-size: 1.55rem;
   }
@@ -132,7 +135,7 @@ body {
     font-size: 0.95rem;
   }
   .spag-img {
-    width: 90%;
+    width: 100%;
     height: auto;
   }
 }
